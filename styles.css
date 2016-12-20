@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/bb/ed/90/bbed90cdf2765934f619c1b0499bb364.jpg);
+  background-size: 100%;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -20,8 +21,15 @@ body, a:link, a:visited, a:active{
 .title{
   background-color: #777;
 }
-.dancer{
+/*.dancer{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+*/}
+
+.dancer {
+  background-image: url(https://media1.giphy.com/media/12PrvNr1uAiIDK/200w.gif#58);
+  height: 100px;
+  width: 100px;
+  position: absolute;
 }
