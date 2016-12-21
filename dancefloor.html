@@ -5,12 +5,19 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="lib/jquery.js"></script>
     <script src="src/dancer.js"></script>
-    <script src="src/blinkyDancer.js"></script>
+    <script src="src/redCarlton.js"></script>
+    <script src="src/whiteCarlton.js"></script>
   </head>
   <body>
     <div class="topbar">
-      <span class="title">object dance party</span>
-      <a href="#" class="addDancerButton" data-dancer-maker-function-name="makeBlinkyDancer">add a blinky dancer</a>    </div>
+      <a class="title" onclick="window.location.reload()">object dance party</a>
+      
+      <a href="#" class="addWhiteCarlton" data-make-white-carlton="makeWhiteCarlton">Add a White Carlton</a>
+      <a href="#" class="addRedCarlton" data-make-red-carlton="makeRedCarlton">Add a Red Carlton</a>
+      <a href="#" class="startALineDance" data-start-line-dance="makeLineDance">start a line dance</a>
+      <!-- <a href="#" class="battle" data-battle="makeWhiteCarlton">Battle!</a> -->
+    </div>
+    <div class="dance-floor"></div>
     <script src="src/init.js"></script>
   </body>
 </html>

@@ -1,35 +1,50 @@
 body, html{
   height:100%;
 }
+
+html { 
+  background: url(https://s-media-cache-ak0.pinimg.com/originals/bb/ed/90/bbed90cdf2765934f619c1b0499bb364.jpg) center center fixed; 
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 body{
   margin: 0px;
-  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/bb/ed/90/bbed90cdf2765934f619c1b0499bb364.jpg);
-  background-size: 100%;
   font-size: 18px;
+  overflow: hidden;
 }
+
 body, a:link, a:visited, a:active{
   color: lightblue;
 }
-.title, .addDancerButton{
-  padding:5px 12px;
-  float:right;
-}
-.topbar{
+
+.topbar {
   height:32px;
   background-color: #555;
 }
+
+.topbar a {
+  padding:5px 12px;
+  float: right;
+}
+
 .title{
   background-color: #777;
 }
-/*.dancer{
-  border:10px solid red;
-  border-radius:10px;
-  position:absolute;
-*/}
 
-.dancer {
-  background-image: url(https://media1.giphy.com/media/12PrvNr1uAiIDK/200w.gif#58);
-  height: 100px;
-  width: 100px;
+.dance-floor {
+  top: 2%;
+  left: 1%;
+  height: 50%;
+  width: 80%;
+  position: relative;
+}
+
+img {
   position: absolute;
+  height: 400px;
 }

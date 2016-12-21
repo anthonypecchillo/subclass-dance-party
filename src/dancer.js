@@ -6,22 +6,21 @@ var makeDancer = function(top, left, timeBetweenSteps) {
   
   // use jQuery to create an HTML <span> tag
   this.$node = $('<img class="dancer"></img>');
-  this.$node.attr('src', 'https://media1.giphy.com/media/12PrvNr1uAiIDK/200w.gif#58');
 };
 
-makeDancer.prototype.step = function() {
+makeDancer.prototype.step = function(cb) {
   // the basic dancer doesn't do anything interesting at all on each step,
   // it just schedules the next step
   var context = this;
-  setTimeout(this.step.bind(context), this.timeBetweenSteps);
+  setTimeout(cb.bind(context), this.timeBetweenSteps);
 };
 
-makeDancer.prototype.setPosition = function() {
+makeDancer.prototype.setPosition = function(top, left) {
   // Use css top and left properties to position our <span> tag
   // where it belongs on the page. See http://api.jquery.com/css/
   var styleSettings = {
-    top: this.top,
-    left: this.left
+    top: top,
+    left: left
   };
   this.$node.css(styleSettings);
 };
